@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Verifica JS - radio</title>
+    </head>
+    <body>
+<html>
+<body>
+<br><b> In che classe sei? </b><br>
+<input type="radio" id="3f" value="3f">3F<br> 
+<input type="radio" id="4f" value="4f">4F<br> 
+<input type="radio" id="5f" value="5f">5F<br>    
+
+<button type="button" onclick=" checkButton()"> Conferma La Scelta </button> 
+    
+<h3 id="disp" style= "color:green"> </h3>
+<h4 id="error" style= "color:red"> </h4>
+</body>
+
+<script>
+function checkButton() {  
+            if(document.getElementById('3f').checked) { 
+                document.getElementById("disp").innerHTML 
+                    = document.getElementById("3f").value 
+                    + " risposta sbagliata"; 
+            } 
+            else if(document.getElementById('4f').checked) { 
+                document.getElementById("disp").innerHTML 
+                    = document.getElementById("4f").value 
+                    + " risposta corretta";   
+            } 
+            else if(document.getElementById('5f').checked) { 
+                document.getElementById("disp").innerHTML 
+                    = document.getElementById("5f").value 
+                    + " risposta sbagliata";   
+            } 
+            else { 
+                document.getElementById("error").innerHTML 
+                    = "Non hai selezionato niente"; 
+            } 
+        } 
+    </script> 
+</html>
+
+ 
+  </body>
+</html>
